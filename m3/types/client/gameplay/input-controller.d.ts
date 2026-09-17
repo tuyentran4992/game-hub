@@ -1,0 +1,50 @@
+import Phaser from 'phaser';
+import type { BucketLayout } from './physics-layout';
+import type { DroppedFruit } from './merge-handler';
+import { type ObstacleGameObject } from './obstacle-sprite';
+import type { StageConfig } from '../logic/stages';
+export interface InputControllerState {
+    ghostX: number;
+    ghostTier: number;
+    isHammerMode: boolean;
+    isBombActiveNext: boolean;
+    isRainbowActiveNext: boolean;
+    isShakingBucket: boolean;
+    isPaused: boolean;
+    gameOverTriggered: boolean;
+    sceneStartTime: number;
+    lastUiClickTime: number;
+    lastMotionMs: number;
+    gameMode: 'classic' | 'stage' | 'daily';
+    stageDropsUsed: number;
+    stageDropsRemaining: number;
+    stageConfig?: StageConfig | undefined;
+    hasClaimedDailyExtraDrops: boolean;
+    fruits: DroppedFruit[];
+    stageObstacleObjects: Map<string, ObstacleGameObject>;
+    ghost: Phaser.GameObjects.Image;
+    aimLine: Phaser.GameObjects.Graphics;
+    hammerInstructionText?: Phaser.GameObjects.Text | undefined;
+    swapButtonContainer?: Phaser.GameObjects.Container | undefined;
+    shakeButtonContainer?: Phaser.GameObjects.Container | undefined;
+}
+export interface InputControllerCallbacks {
+    promptRefillPowerups: () => void;
+    updateHud: () => void;
+    updateActionBar: () => void;
+    spawnFruit: (tier: number, x: number, y: number) => DroppedFruit;
+    removeFruit: (fruit: DroppedFruit) => void;
+    checkStageProgress: () => void;
+    showDailyExtraDropsModal: () => void;
+    triggerGameOver: () => void;
+    playSfx: (key: string, volume?: number, detune?: number) => void;
+}
+export declare function clampGhostX(x: number, tier: number, layout: BucketLayout): number;
+export declare function createAimLine(scene: Phaser.Scene): Phaser.GameObjects.Graphics;
+export declare function refreshAimLine(aimLine: Phaser.GameObjects.Graphics, layout: BucketLayout, ghostX: number, ghostTier: number, isGameOver: boolean): void;
+export declare function createGhost(scene: Phaser.Scene, layout: BucketLayout, ghostX: number, ghostTier: number): Phaser.GameObjects.Image;
+export declare function refreshGhost(scene: Phaser.Scene, layout: BucketLayout, state: InputControllerState): void;
+export declare function bindInput(scene: Phaser.Scene, layout: BucketLayout, state: InputControllerState, callbacks: InputControllerCallbacks): void;
+export declare function tryDrop(scene: Phaser.Scene, layout: BucketLayout, state: InputControllerState, callbacks: InputControllerCallbacks, pointerX?: number, pointerY?: number): void;
+export declare function onSwapFruit(scene: Phaser.Scene, layout: BucketLayout, state: InputControllerState, callbacks: InputControllerCallbacks): void;
+export declare function onShakeBucket(scene: Phaser.Scene, state: InputControllerState, callbacks: InputControllerCallbacks): void;
