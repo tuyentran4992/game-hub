@@ -1,0 +1,139 @@
+{
+ "frog-hop": {
+  "fps": 12,
+  "loop": true,
+  "frames": [
+   {
+    "file": "frame-01.png",
+    "sha256": "9ce03ee23c22764723608d7d5c9e64387c71b1f59f63f1a6b477849d132f35fc",
+    "bytes": 30419
+   },
+   {
+    "file": "frame-02.png",
+    "sha256": "59805fb420359598a4a57f16e4ee9b8085afb319930001cac4f97ac2fae62ad1",
+    "bytes": 17626
+   },
+   {
+    "file": "frame-03.png",
+    "sha256": "d47c5ffaca7bfe02acb962e8ce1b5b61efe5b0f5d777e6c061d653297a26fb8a",
+    "bytes": 26613
+   },
+   {
+    "file": "frame-04.png",
+    "sha256": "a2258051385233ecb5e970edfec5d53ba2ca44a1000028883d9454e9ba88563d",
+    "bytes": 26662
+   },
+   {
+    "file": "frame-05.png",
+    "sha256": "2edcfa789ed1595e6fc9b791a818af0623ece2bab704e424963d935667634e11",
+    "bytes": 30932
+   },
+   {
+    "file": "frame-06.png",
+    "sha256": "be3eaf075d212a9289f6e7f3c3ac3d832ee8a10780436f4ac1bbfd6253b937f6",
+    "bytes": 21953
+   }
+  ],
+  "width": 220,
+  "height": 220
+ },
+ "frog-lunge": {
+  "fps": 14,
+  "loop": false,
+  "frames": [
+   {
+    "file": "frame-01.png",
+    "sha256": "b331dd6b0495f32d511a2ea6bfd2c95b1130f966469f273a314af4f8e95ac193",
+    "bytes": 27594
+   },
+   {
+    "file": "frame-02.png",
+    "sha256": "a7b96e1934f5eba0744c6f13f365006febf8921dc936153a26028d8cbba27f71",
+    "bytes": 28798
+   },
+   {
+    "file": "frame-03.png",
+    "sha256": "37c8a7075a606256969e7ac56bab65a75c337fb1aacbc1165aaf12fa3061bd74",
+    "bytes": 23732
+   },
+   {
+    "file": "frame-04.png",
+    "sha256": "01a670db886a57ece29e5a2f51944744e7f9d9430c1cbeeeb812cf27d4a05dbd",
+    "bytes": 30156
+   },
+   {
+    "file": "frame-05.png",
+    "sha256": "65199eef1ee88e4cb71df98a7420dc400bad20445ab90537363be44966ab3012",
+    "bytes": 26207
+   }
+  ],
+  "width": 220,
+  "height": 220
+ },
+ "frog-stunned": {
+  "fps": 6,
+  "loop": true,
+  "frames": [
+   {
+    "file": "frame-01.png",
+    "sha256": "574c33ed694b02f9028933f9d1a09400446e6db83a50da6ef626de32b74f8f87",
+    "bytes": 28916
+   },
+   {
+    "file": "frame-02.png",
+    "sha256": "7e1f0063a623134ba78c1a96117cbc9e2882d85af9ec2a9be77b0d088cbfa50e",
+    "bytes": 29530
+   },
+   {
+    "file": "frame-03.png",
+    "sha256": "01a00eded6da5d31a6d8dc754d5b6cc624561b23e23e1e0aea489725805f7d17",
+    "bytes": 29252
+   },
+   {
+    "file": "frame-04.png",
+    "sha256": "15e88ba3cd62e1abebec460d543526e2d398dd74fde4d70919cc8922da2932bc",
+    "bytes": 30662
+   }
+  ],
+  "width": 220,
+  "height": 220
+ },
+ "firefly-hover": {
+  "fps": 14,
+  "loop": true,
+  "frames": [
+   {
+    "file": "frame-01.png",
+    "sha256": "e09067d67c13c6b52b784125698c5348e5e4304bd76c2a02da8784db9dc91638",
+    "bytes": 29549
+   },
+   {
+    "file": "frame-02.png",
+    "sha256": "7d9933c52af55bcb35ac33448936a3136cdc08b30dfbb8c9129991fe68dd8509",
+    "bytes": 31897
+   },
+   {
+    "file": "frame-03.png",
+    "sha256": "986f6eb2c1599e882ebbd5508cd4b589f09415fc500e52aa8f102cb46a00a946",
+    "bytes": 24238
+   },
+   {
+    "file": "frame-04.png",
+    "sha256": "b11d069f83f302003c00702ec314baa5aebcda49738c7743a1d9231613e1d779",
+    "bytes": 22344
+   },
+   {
+    "file": "frame-05.png",
+    "sha256": "d014a9e09faa9f08cc20b78d538176142b2362122fa672f7e35041722855e42d",
+    "bytes": 29282
+   },
+   {
+    "file": "frame-06.png",
+    "sha256": "95c395093d3507d765d45ec4050ca11b7f55c1660de3f06dcd6fb8d45f981bec",
+    "bytes": 28599
+   }
+  ],
+  "width": 200,
+  "height": 200
+ }
+}
